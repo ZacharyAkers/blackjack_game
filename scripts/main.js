@@ -168,19 +168,19 @@ stand.addEventListener('click', () => {
 
 function winner(){
   if(dealerScore <= 21 && dealerScore > playerScore ){
-    document.getElementById("messages").innerHTML = "Dealer has higher score, you lose!";
+    document.getElementById("messages").innerHTML = "Dealer has scored higher, You Lose!";
     deal.disabled = true;
     hit.disabled = true;
     stand.disabled = true;
   } 
   else if(playerScore <= 21 && playerScore > dealerScore){
-    document.getElementById("messages").innerHTML = "You have the higher score, dealer loses!";
+    document.getElementById("messages").innerHTML = "You have scored higher, Dealer Loses!";
     deal.disabled = true;
     hit.disabled = true;
     stand.disabled = true;
   }
   else if(playerScore === dealerScore){
-    document.getElementById("messages").innerHTML = "Tie game, no one wins!";
+    document.getElementById("messages").innerHTML = "Tied game!";
     deal.disabled = true;
     hit.disabled = true;
     stand.disabled = true;
